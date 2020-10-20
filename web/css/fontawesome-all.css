@@ -205,14 +205,19 @@ readers do not read off random characters that represent icons */
 .fa-adjust:before {
   content: "\f042"; }
 
+.fav-icon:before {
+    background: url('images\logo.ico');
+    height: 32px;
+    width: 32px;
+    display: block;
+}
+
 .fa-adn:before {
   content: "\f170"; }
 
 .fa-adversal:before {
   content: "\f36a"; }
 
-.fa-affiliatetheme:before {
-  content: "\f36b"; }
 
 .fa-algolia:before {
   content: "\f36c"; }
@@ -1590,6 +1595,9 @@ readers do not read off random characters that represent icons */
 
 .fa-map-pin:before {
   content: "\f276"; }
+
+.fa-concierge-bell {
+    content: "\f562"; }
 
 .fa-map-signs:before {
   content: "\f277"; }
