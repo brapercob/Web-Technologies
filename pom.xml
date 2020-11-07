@@ -12,6 +12,7 @@
     <groupId>Web-Technologies</groupId>
     <artifactId>IIT-web</artifactId>
     <version>1.0</version>
+    <packaging>war</packaging>
 
     <name>IIT-Web</name>
     <description>IIT web page project for Web Technologies subject.</description>
@@ -19,7 +20,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.7.RELEASE</version>
+        <version>2.2.4.RELEASE</version>
         <relativePath />
     </parent>
 
@@ -87,20 +88,9 @@
         <!-- Application server -->
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
             <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
         </dependency>
 
         <!-- Security -->
@@ -139,11 +129,10 @@
         </dependency>
 
         <!-- Data layer -->
-
         <dependency>
-            <groupId>org.jdbi</groupId>
-            <artifactId>jdbi3-postgres</artifactId>
-            <version>${jdbi.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+            <version>2.1.8.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.jdbi</groupId>
@@ -158,15 +147,34 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.39</version>
+            <version>8.0.22</version>
         </dependency>
 
+        <!-- JDBC Driver -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.199</version>
+            <scope>runtime</scope>
+        </dependency>
 
         <!-- Utilities -->
 
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>2.2</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
