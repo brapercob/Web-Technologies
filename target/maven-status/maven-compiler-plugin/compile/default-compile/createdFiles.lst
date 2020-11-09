@@ -1,0 +1,10 @@
+model\Task.class
+repositories\TaskJDBIRepository.class
+com\DatabaseConfiguration.class
+features\TaskController.class
+model\taskRequests\TaskRequest.class
+repositories\TaskRepository.class
+features\personController.class
+model\Gender.class
+model\taskResponse\TaskResponse.class
+model\Person.class
