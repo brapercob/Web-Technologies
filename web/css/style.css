@@ -123,6 +123,7 @@ header {
 
 .dropdown-submenu {
     position: relative;
+    color: #495057;
 }
 
 .dropdown-submenu>.dropdown-menu {
@@ -234,6 +235,7 @@ header.position-fixed {
     background-size: cover;
     position: relative;
     z-index: 1;
+
 }
 
 .banner:after,
@@ -258,6 +260,7 @@ header.position-fixed {
     background-size: cover;
     position: relative;
     z-index: 1;
+
 }
 
 .soon_banner {
@@ -294,6 +297,8 @@ header.position-fixed {
     padding: 12vw 0;
     position: relative;
     z-index: 1;
+
+
 }
 
 .main_banner:after {
@@ -480,6 +485,8 @@ h3.heading span {
 .welcome-bottom{
     background: url(../images/egyetem.jpg) no-repeat center;
     background-attachment: fixed;
+
+
 }
 .image-layer {
     background-color: rgba(0, 0, 0, 0.6);
@@ -1083,6 +1090,9 @@ span.simply-word {
 .stats_test{
     background: url(../images/egyetem.jpg) no-repeat center;
     background-attachment: fixed;
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+
 }
 .stats_test h3{
 	color: #fff;
@@ -1392,6 +1402,7 @@ p.para-w3-agile {
 .bg-img {
     background: url(../images/egyetem.jpg) no-repeat center;
     background-size: cover;
+
 }
 .contact-layer {
     background: rgba(0, 0, 0, 0.5);
@@ -1766,7 +1777,7 @@ address p a:hover {
 	.stats_left p {
 		font-size: 2.5em;
 	}
-	.navbar {
+	.navbar navbar {
 		padding: 0.5em 0;
 	}
 	.address-info {

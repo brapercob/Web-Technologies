@@ -8,8 +8,6 @@ import org.hibernate.validator.constraints.URL;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
-import java.awt.*;
 import java.util.Date;
 import java.util.List;
 
@@ -26,9 +24,7 @@ public class Teacher extends Person {
     @URL
     private String personalWeb;
 
-    private List<String> publicationList;
-
-    private List<Date> consultingHours;
+    private String consultingHours;
 
     @OneToMany
     private List<RoomBooking> roomBookings;
